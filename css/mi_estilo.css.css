@@ -1,0 +1,403 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+/* RESET GRAL. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* ZONA Cebecera */
+
+.cont_cabecera {
+ height: 20rem; 
+ background: linear-gradient(to left, #6a97a3, #2b08c5);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 2rem;
+ color: white;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px dotted white;
+  border-bottom: 3px dotted black;
+  background: linear-gradient(to left, #6a97a3, #2b08c5);
+  font-size: 25px;
+  place-items: center;
+
+  a {
+   text-decoration: none;
+   color: white;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  img:hover{
+    transform: scale(1.3);
+  }
+
+}
+
+/* Separador de Zonas */
+
+.separador {
+  width: 100%;
+  height: 6rem;
+  background-color: white;
+}
+
+/* Titulo de Zonas */
+
+.titulo_zona {
+
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cont_zona{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15PX;
+    background: linear-gradient(to right, #6a97a3, #2b08c5);
+    letter-spacing: 5px;
+    color: white;
+  }
+}
+
+/* ZONA ACERACA DE MI */
+
+.grid-3-yo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  
+  div {
+   list-style-position: inside;
+   justify-content: center;
+   }
+
+   img {
+    height: 400px;
+   }
+
+   h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-decoration: underline;
+     text-underline-offset: 8px;
+   }
+
+   li {
+    margin: 10px;
+    font-size: 18px;
+   } 
+
+   .mago {
+    display: flex;
+    justify-content: end;
+   }
+
+}
+
+/* ZONA TARJETAS */
+
+.grid-tarjetas-3 {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  width: 90%;
+  justify-items: flex-end;
+
+    div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px; 
+    }
+
+    img {
+      width: 100px;
+      margin: 9px;
+    }
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 3rem;
+      background: linear-gradient(to left, #cdd4d6, #1b1146);
+      color: #f4f4f5;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    p {
+      text-align: justify;
+      padding: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 5px;
+    }
+
+  a:hover {
+    background-color: #101213;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+  }  
+
+  div:hover {
+    border: 2px dotted black;
+    box-shadow: 5px 5px 15px 5px rgba(124, 121, 121, 0.5);
+  }
+} 
+
+/* ZONA Reseñas */
+
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  gap: 3rem;
+
+  div {
+    width: 90%;
+    border: 3px dotted black;
+    border-radius: 15px;
+    justify-content: space-around;
+
+    h2 {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+
+    p {
+      text-align: justify;
+      padding: 15px;
+
+    }
+  }
+
+  div:hover {
+    box-shadow: 5px 5px 15px 5px rgba(124, 121, 121, 0.5);
+  }
+}
+
+/* ZONA Recomendaciones */
+
+.grid-reco-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    border: 2px dotted black;
+    border-radius: 15px;
+    padding: 5px;
+
+    iframe {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    p{
+      width: 100%;
+      padding: 10px;
+      text-align: justify;
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+  }
+  div:hover {
+    border: 3px solid grey;
+    box-shadow: 5px 5px 15px 5px rgba(124, 121, 121, 0.5);
+  }
+}
+
+/* ZONA Video Sociales */
+
+.grid-soc-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-items: center;
+
+    div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    border: 2px dotted black;
+    border-radius: 15px;
+    padding: 5px;
+
+    iframe {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    p{
+      width: 100%;
+      padding: 10px;
+      text-align: justify;
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+  }
+
+  div:hover {
+    box-shadow: 5px 5px 15px 5px rgba(124, 121, 121, 0.5);
+  }
+
+}
+
+/* ZONA Formulario */
+
+.contenedor_form {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted black;
+  border-radius: 20px;
+  background-color: #f4f4f5;
+  width: 85vh;
+  height: 100%;
+
+
+  label {
+    margin-top: 10px;  
+    margin-bottom: 10px; 
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: #503d3d;
+  }
+
+  input {
+    letter-spacing: 0.2rem;
+    font-size: 18px;
+    color: #503d3d;
+    height: 35px;
+    width: 60%;
+    text-align:center ;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 0.8rem;
+    margin-top: 10px;
+    width: 38%;
+    border-radius: 18px;
+    margin-bottom: 15px;
+
+  }
+   
+  textarea {
+    resize: none;
+    margin: 0.5rem;
+    padding: 0.3 rem;
+    width: 70vh;
+    height: 100px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+}
+
+form button:hover {
+ background-color: black;
+ color: white;
+}
+
+/* ZONA Footer */
+
+.pie {
+ display:flex;
+ justify-content: space-evenly;
+ color: white;
+ background-color: black;
+ background: linear-gradient(to left, #6a97a3, #2b08c5);
+ width: 100%;
+ height: 10rem;
+}
+
+.pie1 {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 80px;
+  }
+}
+
+.pie2 {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+}
+
+.pie3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  align-items: center;
+  gap: 12px;
+
+  img {
+    height: 45px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
